@@ -245,7 +245,7 @@ type IssueQueryParams struct {
 	Priority           int    `url:"priority,omitempty"`
 	Owner              int    `url:"owner,omitempty"`
 	ExcludeStatus      int    `url:"exclude_status,omitempty"`
-	ExcludeTags        int    `url:"exclude_tags,omitempty"` // Strings separated by comma `,`
+	ExcludeTags        string `url:"exclude_tags,omitempty"` // Strings separated by comma `,`
 	ExcludeAssignedTo  int    `url:"exclude_assigned_to,omitempty"`
 	ExcludeRole        int    `url:"exclude_role,omitempty"`
 	ExcludeEpic        int    `url:"exclude_epic,omitempty"`
